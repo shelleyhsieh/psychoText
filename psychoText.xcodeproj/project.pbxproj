@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		D98F0BF729405BCD0029BAC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F0BF629405BCD0029BAC3 /* AppDelegate.swift */; };
 		D98F0BF929405BCD0029BAC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F0BF829405BCD0029BAC3 /* SceneDelegate.swift */; };
-		D98F0BFB29405BCD0029BAC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F0BFA29405BCD0029BAC3 /* ViewController.swift */; };
 		D98F0BFE29405BCD0029BAC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98F0BFC29405BCD0029BAC3 /* Main.storyboard */; };
 		D98F0C0029405BCE0029BAC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D98F0BFF29405BCE0029BAC3 /* Assets.xcassets */; };
 		D98F0C0329405BCE0029BAC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98F0C0129405BCE0029BAC3 /* LaunchScreen.storyboard */; };
+		D98F0C0B29405C720029BAC3 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F0C0A29405C720029BAC3 /* StartViewController.swift */; };
+		D98F0C0D29405C830029BAC3 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F0C0C29405C830029BAC3 /* ResultViewController.swift */; };
+		D98F0C0F29405C970029BAC3 /* QnAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F0C0E29405C970029BAC3 /* QnAViewController.swift */; };
+		D98F0C1129405CA70029BAC3 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F0C1029405CA70029BAC3 /* Questions.swift */; };
+		D99C78D5294069E400FDFF13 /* ChenYuluoyan-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D99C78D3294069E400FDFF13 /* ChenYuluoyan-Thin.ttf */; };
+		D99C78D6294069E400FDFF13 /* jf-openhuninn-1.1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D99C78D4294069E400FDFF13 /* jf-openhuninn-1.1.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D98F0BF329405BCD0029BAC3 /* psychoText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = psychoText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D98F0BF629405BCD0029BAC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D98F0BF829405BCD0029BAC3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D98F0BFA29405BCD0029BAC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D98F0BFD29405BCD0029BAC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D98F0BFF29405BCE0029BAC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D98F0C0229405BCE0029BAC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D98F0C0429405BCE0029BAC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D98F0C0A29405C720029BAC3 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = SOURCE_ROOT; };
+		D98F0C0C29405C830029BAC3 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = SOURCE_ROOT; };
+		D98F0C0E29405C970029BAC3 /* QnAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QnAViewController.swift; sourceTree = SOURCE_ROOT; };
+		D98F0C1029405CA70029BAC3 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = SOURCE_ROOT; };
+		D99C78D3294069E400FDFF13 /* ChenYuluoyan-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChenYuluoyan-Thin.ttf"; sourceTree = "<group>"; };
+		D99C78D4294069E400FDFF13 /* jf-openhuninn-1.1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "jf-openhuninn-1.1.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +66,18 @@
 		D98F0BF529405BCD0029BAC3 /* psychoText */ = {
 			isa = PBXGroup;
 			children = (
+				D98F0C1029405CA70029BAC3 /* Questions.swift */,
+				D98F0C0E29405C970029BAC3 /* QnAViewController.swift */,
+				D98F0C0C29405C830029BAC3 /* ResultViewController.swift */,
+				D98F0C0A29405C720029BAC3 /* StartViewController.swift */,
 				D98F0BF629405BCD0029BAC3 /* AppDelegate.swift */,
 				D98F0BF829405BCD0029BAC3 /* SceneDelegate.swift */,
-				D98F0BFA29405BCD0029BAC3 /* ViewController.swift */,
 				D98F0BFC29405BCD0029BAC3 /* Main.storyboard */,
 				D98F0BFF29405BCE0029BAC3 /* Assets.xcassets */,
 				D98F0C0129405BCE0029BAC3 /* LaunchScreen.storyboard */,
 				D98F0C0429405BCE0029BAC3 /* Info.plist */,
+				D99C78D3294069E400FDFF13 /* ChenYuluoyan-Thin.ttf */,
+				D99C78D4294069E400FDFF13 /* jf-openhuninn-1.1.ttf */,
 			);
 			path = psychoText;
 			sourceTree = "<group>";
@@ -125,7 +140,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D99C78D6294069E400FDFF13 /* jf-openhuninn-1.1.ttf in Resources */,
 				D98F0C0329405BCE0029BAC3 /* LaunchScreen.storyboard in Resources */,
+				D99C78D5294069E400FDFF13 /* ChenYuluoyan-Thin.ttf in Resources */,
 				D98F0C0029405BCE0029BAC3 /* Assets.xcassets in Resources */,
 				D98F0BFE29405BCD0029BAC3 /* Main.storyboard in Resources */,
 			);
@@ -138,9 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D98F0BFB29405BCD0029BAC3 /* ViewController.swift in Sources */,
 				D98F0BF729405BCD0029BAC3 /* AppDelegate.swift in Sources */,
 				D98F0BF929405BCD0029BAC3 /* SceneDelegate.swift in Sources */,
+				D98F0C0B29405C720029BAC3 /* StartViewController.swift in Sources */,
+				D98F0C1129405CA70029BAC3 /* Questions.swift in Sources */,
+				D98F0C0D29405C830029BAC3 /* ResultViewController.swift in Sources */,
+				D98F0C0F29405C970029BAC3 /* QnAViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
