@@ -16,7 +16,6 @@
 		D98F0C0D29405C830029BAC3 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F0C0C29405C830029BAC3 /* ResultViewController.swift */; };
 		D98F0C0F29405C970029BAC3 /* QnAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F0C0E29405C970029BAC3 /* QnAViewController.swift */; };
 		D98F0C1129405CA70029BAC3 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F0C1029405CA70029BAC3 /* Questions.swift */; };
-		D99C78D5294069E400FDFF13 /* ChenYuluoyan-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D99C78D3294069E400FDFF13 /* ChenYuluoyan-Thin.ttf */; };
 		D99C78D6294069E400FDFF13 /* jf-openhuninn-1.1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D99C78D4294069E400FDFF13 /* jf-openhuninn-1.1.ttf */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +31,6 @@
 		D98F0C0C29405C830029BAC3 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = SOURCE_ROOT; };
 		D98F0C0E29405C970029BAC3 /* QnAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QnAViewController.swift; sourceTree = SOURCE_ROOT; };
 		D98F0C1029405CA70029BAC3 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = SOURCE_ROOT; };
-		D99C78D3294069E400FDFF13 /* ChenYuluoyan-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChenYuluoyan-Thin.ttf"; sourceTree = "<group>"; };
 		D99C78D4294069E400FDFF13 /* jf-openhuninn-1.1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "jf-openhuninn-1.1.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,7 +74,6 @@
 				D98F0BFF29405BCE0029BAC3 /* Assets.xcassets */,
 				D98F0C0129405BCE0029BAC3 /* LaunchScreen.storyboard */,
 				D98F0C0429405BCE0029BAC3 /* Info.plist */,
-				D99C78D3294069E400FDFF13 /* ChenYuluoyan-Thin.ttf */,
 				D99C78D4294069E400FDFF13 /* jf-openhuninn-1.1.ttf */,
 			);
 			path = psychoText;
@@ -142,7 +139,6 @@
 			files = (
 				D99C78D6294069E400FDFF13 /* jf-openhuninn-1.1.ttf in Resources */,
 				D98F0C0329405BCE0029BAC3 /* LaunchScreen.storyboard in Resources */,
-				D99C78D5294069E400FDFF13 /* ChenYuluoyan-Thin.ttf in Resources */,
 				D98F0C0029405BCE0029BAC3 /* Assets.xcassets in Resources */,
 				D98F0BFE29405BCD0029BAC3 /* Main.storyboard in Resources */,
 			);
