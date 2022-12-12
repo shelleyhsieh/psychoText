@@ -14,11 +14,13 @@ class ResultViewController: UIViewController {
     @IBOutlet var answerLable: [UILabel]!
     @IBOutlet weak var previousBtn: UIButton!
     @IBOutlet weak var nextBtn: UIButton!
-    
+//    答案排序
     var ansIndex = 0
+//    答案的內容
     var ansDatabase = answerDatebase().getAnswer()
     var restart = ""
-    var answers = [String](repeating: "", count: 3)
+//    上一頁的答案設為Int,這頁的接收型別需一致
+    var answers = [Int]()
     
 //    init?(coder:NSCoder, answer: [String]){
 //        self.answer = answer
@@ -76,38 +78,38 @@ class ResultViewController: UIViewController {
             answerLable[i].isHidden = true
         }
     }
-    //    顯示所選的答案，並用顏色匡起來
+//    顯示所選的答案，並用顏色匡起來
+//    在answerlable上設定tag,依序判斷選到的答案(設為tag後存成Int)是否等於answerlable的tag(Int),若為選到的答案則用顏色標示
     func showAnswer() {
-//        var markAnsColor = answers[ansIndex]
-        if answers[ansIndex] == String(answerLable[0].tag){
+        if answers[ansIndex] == answerLable[0].tag{
             answerLable[0].backgroundColor = UIColor(cgColor: CGColor(red: 248/255, green: 235/255, blue: 216/255, alpha: 1))
         }else{
             answerLable[0].backgroundColor = .clear
         }
         print(answerLable[0].tag, answers[ansIndex])
         
-        if answers[ansIndex] == String(answerLable[1].tag){
+        if answers[ansIndex] == answerLable[1].tag{
             answerLable[1].backgroundColor = UIColor(cgColor: CGColor(red: 248/255, green: 235/255, blue: 216/255, alpha: 1))
         }else{
             answerLable[1].backgroundColor = .clear
         }
         print(answerLable[1].tag, answers[ansIndex])
         
-        if answers[ansIndex] == String(answerLable[2].tag){
+        if answers[ansIndex] == answerLable[2].tag{
             answerLable[2].backgroundColor = UIColor(cgColor: CGColor(red: 248/255, green: 235/255, blue: 216/255, alpha: 1))
         }else{
             answerLable[2].backgroundColor = .clear
         }
         print(answerLable[2].tag, answers[ansIndex])
         
-        if answers[ansIndex] == String(answerLable[3].tag){
+        if answers[ansIndex] == answerLable[3].tag{
             answerLable[3].backgroundColor = UIColor(cgColor: CGColor(red: 248/255, green: 235/255, blue: 216/255, alpha: 1))
         }else{
             answerLable[3].backgroundColor = .clear
         }
         print(answerLable[3].tag, answers[ansIndex])
         
-        if answers[ansIndex] == String(answerLable[4].tag){
+        if answers[ansIndex] == answerLable[4].tag{
             answerLable[4].backgroundColor = UIColor(cgColor: CGColor(red: 248/255, green: 235/255, blue: 216/255, alpha: 1))
         }else{
             answerLable[4].backgroundColor = .clear
@@ -129,7 +131,7 @@ class ResultViewController: UIViewController {
 //    顯示第一題答案時，不顯示上一題的按鈕
         if ansIndex == 0 {
             previousBtn.isHidden = true
-//    當顯示玩總題數時，出現在玩一次的提示
+//    當顯示完所有答案時，出現再玩一次的提示
         }else if ansIndex == 2 {
             restart = "再玩一次"
         }else{

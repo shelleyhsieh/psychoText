@@ -8,7 +8,7 @@
 import Foundation
 
 struct Question {
-//     題目內容、選項
+//     問題頁面的題目內容、選項
     var description: String
     var answer: [String]
 }
@@ -24,7 +24,7 @@ struct QuestionDataBase {
     }
 }
 
-//    題目內容、題目所代表的意義、答案
+//    結果頁面的題目內容、題目所代表的意義、答案
 struct Answer {
     var description: String
     var question: String

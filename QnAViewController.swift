@@ -18,7 +18,7 @@ class QnAViewController: UIViewController {
     var questions = [Question]()
     var database = QuestionDataBase()
 //    答案
-    var yourAnswer = ["","",""]
+    var yourAnswer = [Int]()
 //    答案排序
     var ansIndex = 0
     
@@ -77,37 +77,33 @@ class QnAViewController: UIViewController {
         }
     }
     
-    
-//    選擇答案，把答案array存成index
     @IBAction func selecAnswer(_ sender: UIButton) {
         questionIndex += 1
         inputQuestion()
         play()
     
-//    設定btn的tag,以辨識選到哪一個
+//    設定btn的tag,以辨識選到哪一個，並在前面宣告yourAnswer為Int的Array，因tag的型別是Int
         let button = sender
         let index = button.tag
         switch index {
         case 0:
-            yourAnswer[ansIndex] = String(index)
+            yourAnswer.insert(0, at: ansIndex)
         case 1:
-            yourAnswer[ansIndex] = String(index)
+            yourAnswer.insert(1, at: ansIndex)
         case 2:
-            yourAnswer[ansIndex] = String(index)
+            yourAnswer.insert(2, at: ansIndex)
         case 3:
-            yourAnswer[ansIndex] = String(index)
+            yourAnswer.insert(3, at: ansIndex)
         case 4:
-            yourAnswer[ansIndex] = String(index)
+            yourAnswer.insert(4, at: ansIndex)
         default:
             break
         }
-//        yourAnswer[ansIndex] = (sender.titleLabel?.text)!
-        print(yourAnswer, index)
+        print(yourAnswer)
     
         ansIndex += 1
 //    答完3題，將答案傳入下一頁
         if ansIndex == 3 {
-            
             performSegue(withIdentifier: "showResult", sender: sender)
         }
     }
